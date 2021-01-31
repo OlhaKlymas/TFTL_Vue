@@ -1,0 +1,35 @@
+footer
+  background: $colorOrangeLight
+  height: 195px
+
+  .footer__wrap
+    width: $contentWidth
+    margin: auto
+    height: 100%
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+
+  .footer__top, .footer__bottom
+    position: relative
+    @include displayFlex
+    align-items: center
+
+  .footer__top
+    top: 44px
+
+  .footer__bottom
+    bottom: 20px
+
+  .footer__social
+    display: flex
+
+    a
+      width: 40px
+      height: 40px
+      margin-left: 16px
+      display: flex
+      align-items: center
+      justify-content: center
+      background-color: $colorOrange
+      border-radius: 6px

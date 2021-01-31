@@ -1,0 +1,36 @@
+.select-wrap
+  position: relative
+
+  .select
+    width: max-content
+    cursor: pointer
+
+    & ~ .option-wrap
+      position: absolute
+      top: 32px
+      z-index: 1
+
+      width: max-content
+
+      background-color: $textColorWhite
+      border-radius: 6px
+      box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.04)
+
+      .option
+        padding: 4px 20px
+        cursor: pointer
+
+        &:hover
+          background-color: $colorOrangeLight
+
+    &.active ~ .option-wrap::before
+      content: ''
+      position: absolute
+      z-index: -1
+      left: 50%
+      top: -4px
+
+      width: 8px
+      height: 8px
+      background-color: $textColorWhite
+      transform: rotateZ(45deg)
